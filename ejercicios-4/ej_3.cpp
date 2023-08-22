@@ -3,7 +3,7 @@
 using namespace std;
 
 int saberElMayor(int a, int b) {
-  if (a < b) {
+  if (a > b) {
     return a;
   } else {
     return b;
@@ -19,11 +19,11 @@ int main() {
   cout << "Ingrese el segundo numero: ";
   cin >> b;
 
-  // Determinamos el menor de los dos numeros
-  int menor = saberElMayor(a, b);
+  // Determinamos el mayor de los dos numeros
+  int mayor = saberElMayor(a, b);
 
   // Imprimimos el resultado
-  cout << "El menor de los dos numeros es " << menor << endl;
+  cout << "El mayor de los dos numeros es " << mayor << endl;
 
   return 0;
 }
