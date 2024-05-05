@@ -6,7 +6,7 @@ using namespace std;
 class Conjunto {
   private:
     vector<int> elementos;
-    int maximo;
+    vector<int>::size_type maximo;
   public:
     Conjunto(int maximo): maximo(maximo) {};
     ~Conjunto() {};
