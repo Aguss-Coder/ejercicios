@@ -3,43 +3,43 @@
 
 using namespace std;
 
-Reloj::Reloj() {
+Clock::Clock() {
   horas = 0;
   minutos = 0;
   segundos = 0;
 }
 
-void Reloj::setHoras(int &pHoras) {
+void Clock::setHoras(int &pHoras) {
   cin >> pHoras;
 }
 
-void Reloj::setMinutos(int &pMinutos) {
+void Clock::setMinutos(int &pMinutos) {
   cin >> pMinutos;
 }
 
-void Reloj::setSegundos(int &pSegundos) {
+void Clock::setSegundos(int &pSegundos) {
   cin >> pSegundos;
 }
 
-int Reloj::getHoras() {
+int Clock::getHoras() {
   return horas;
 }
 
-int Reloj::getMinutos() {
+int Clock::getMinutos() {
   return minutos;
 }
 
-int Reloj::getSegundos() {
+int Clock::getSegundos() {
   return segundos;
 }
 
-void Reloj::reset() {
+void Clock::reset() {
   horas = 0;
   minutos = 0;
   segundos = 0;
 }
 
-Reloj& Reloj::operator++() {
+Clock& Clock::operator++() {
   segundos++;
   if (segundos == 60) {
     segundos = 0;

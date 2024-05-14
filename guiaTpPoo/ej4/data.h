@@ -2,13 +2,13 @@
 
 using namespace std;
 
-class Reloj {
+class Clock {
   private:
     int horas;
     int minutos;
     int segundos;
   public:
-    Reloj();
+    Clock();
     void setHoras(int &pHoras);
     void setMinutos(int &pMinutos);
     void setSegundos(int &pSegundos);
@@ -16,5 +16,5 @@ class Reloj {
     int getMinutos();
     int getSegundos();
     void reset();
-    Reloj& operator++();
+    Clock& operator++();
 };

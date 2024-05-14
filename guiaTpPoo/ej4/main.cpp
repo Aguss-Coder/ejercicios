@@ -6,7 +6,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-  Reloj cronometro;
+  Clock cronometro;
 
   while (true)
   {
